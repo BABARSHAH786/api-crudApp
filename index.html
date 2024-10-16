@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Crud Application using MockAPI</h1>
+        <div class="row">
+            <div class="col-6">
+                <h2>POSTS</h2>
+                <div id="posts" class="posts"></div>
+
+
+                <!-- remove karna hai -->
+                <!-- <div class="post">
+                    <div class="post-header">
+                        <img src="" alt="Avatar">
+                        <div>
+                            <h3>John Doe (Developer)</h3>
+                            <small>9/29/2024, 10:30 AM</small>
+                        </div>
+                    </div>
+                    <p>This is the post body content.</p>
+                    <div class="actions">
+                        <button class="edit-btn" onclick="editPost(1)">Edit</button>
+                        <button class="delete-btn" onclick="deletePost(1)">Delete</button>
+                    </div>
+                </div> -->
+
+            </div>
+            <div class="col-6">
+                <div id="create-post">
+                    <h2>Create Post</h2>
+                    <form id="createPostForm">
+                        <input type="text" name="name" id="name" placeholder="enter your name" required>
+                        <input type="text" name="title" id="title" placeholder="Your title" required>
+                        <input type="text" name="avatar" id="avatar" placeholder="Your Profile URL" required>
+                        <textarea name="body" id="body" placeholder="Enter your Description"></textarea>
+                        <button type="submit" class="btn">Create Post</button>
+
+
+                    </form>
+                </div>
+                <!-- hide due to geminbi check -->
+                <!-- <div id="update-post" style="display: none;">
+                    <h2>Update Post</h2>
+                    <form id="createPostForm">
+                        <input type="text" name="name" id="name" placeholder="enter your name" required>
+                        <input type="text" name="title" id="title" placeholder="Your title" required>
+                        <input type="text" name="avatar" id="avatar" placeholder="Your Profile URL" required>
+                        <textarea name="body" id="body" placeholder="Enter your Description"></textarea>
+                        <button type="submit" class="btn">Delete</button>
+
+                 <button onclick="toggleCreatePostForm()">Create New Post</button>  -->
+
+
+                <div id="update-post" style="display: none;" >
+                    <h2 id="form-title">Update Post</h2>
+                    <form id="createPostForm">
+                        <input type="text" name="name" id="name1" placeholder="Enter your name" required>
+                        <input type="text" name="title" id="title1" placeholder="Your title" required>
+                        <input type="text" name="avatar" id="avatar1" placeholder="Your Profile URL" required>
+                        <textarea name="body" id="body1" placeholder="Enter your Description"></textarea>
+                        <button type="submit" class="btn" id="submitButton">Update Post</button>
+
+
+                    </form>
+                </div>
+                <!-- <button onclick="toggleCreatePostForm()">Update New Post</button> -->
+                <div id="posts"></div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    
+
+
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
